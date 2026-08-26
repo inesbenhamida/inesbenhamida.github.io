@@ -6,11 +6,6 @@
 <title>Inès Benhamida — Portfolio 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-body > *:not(nav):not(.cursor){max-width:1600px;margin-left:auto;margin-right:auto;}
-.hero{border-left:none;border-right:none;}
-.section{border-left:none;border-right:none;}
-body{position:relative;}
-
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 
 :root{
@@ -40,7 +35,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-we
 .cursor-ring.hovered{width:56px;height:56px;border-color:var(--accent);}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.4rem 4rem;background:rgba(250,250,248,0.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}.nav-inner{max-width:1600px;margin:0 auto;width:100%;display:flex;justify-content:space-between;align-items:center;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.4rem 4rem;background:rgba(250,250,248,0.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
 .nav-logo{font-family:var(--font-mono);font-size:0.78rem;font-weight:300;letter-spacing:0.12em;color:var(--muted);}
 .nav-logo strong{color:var(--text);font-weight:400;}
 .nav-links{display:flex;gap:2.5rem;list-style:none;}
@@ -48,7 +43,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .nav-links a:hover{color:var(--accent);}
 
 /* HERO */
-.hero{min-height:100vh;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:center;padding:8rem 4rem 5rem;position:relative;border-bottom:1px solid var(--border);max-width:1600px;margin:0 auto;width:100%;}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;padding:8rem 4rem 5rem;position:relative;border-bottom:1px solid var(--border);}
 .hero-left{display:flex;flex-direction:column;justify-content:flex-end;}
 .hero-eyebrow{font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;}
 .hero-eyebrow::before{content:'';display:inline-block;width:40px;height:1px;background:var(--accent);}
@@ -90,7 +85,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 @keyframes scrollPulse{0%,100%{opacity:0.4;transform:scaleY(1);}50%{opacity:1;transform:scaleY(1.2);}}
 
 /* SECTIONS */
-.section{padding:6rem 4rem;border-bottom:1px solid var(--border);}.section-inner,.hero-left,.about-grid,.skills-list,.projects-grid{max-width:1400px;margin-left:auto;margin-right:auto;}
+.section{padding:6rem 4rem;border-bottom:1px solid var(--border);}
 .section-header{display:grid;grid-template-columns:120px 1fr;gap:3rem;align-items:start;margin-bottom:4rem;}
 .section-num{font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.15em;color:var(--muted);text-transform:uppercase;padding-top:0.6rem;}
 .section-title{font-family:var(--font-serif);font-size:clamp(2.2rem,4vw,3.5rem);font-weight:600;letter-spacing:-0.02em;line-height:1.1;will-change:transform;}
@@ -239,12 +234,12 @@ footer{padding:2rem 4rem;display:flex;justify-content:space-between;align-items:
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Candidate IMAC · ESIEE Paris 2026</div>
+    <div class="hero-eyebrow">Étudiante en Data</div>
     <h1 class="hero-name">Inès<br><em>Benhamida</em></h1>
     <div class="hero-bottom">
       <p class="hero-desc">Étudiante en informatique à l'Université Gustave Eiffel. Je crée à l'intersection du <strong>code</strong>, du <strong>design</strong> et du <strong>multimédia</strong> — avec un goût prononcé pour les expériences numériques soignées.</p>
       <div class="hero-meta">
-        <span>Île-de-France · 21 ans</span>
+        <span>Île-de-France · 22 ans</span>
         <a href="mailto:inesbenhamida00@gmail.com">inesbenhamida00@gmail.com</a>
         <a href="https://github.com/inesbenhamida">github.com/inesbenhamida</a>
       </div>
@@ -447,7 +442,9 @@ footer{padding:2rem 4rem;display:flex;justify-content:space-between;align-items:
 <section class="contact-section" id="contact">
   <div class="section-num reveal" style="text-align:center;margin-bottom:0.5rem;">04 — Contact</div>
   <h2 class="contact-big reveal">Prenons <em>contact</em></h2>
-  <p class="reveal" style="color:var(--muted);font-size:0.95rem;max-width:420px;margin:0 auto 1.5rem;">Candidate IMAC pour la rentrée 2026. N'hésitez pas à me contacter pour échanger.</p>
+  <p class="reveal" style="color:var(--muted);font-size:0.95rem;max-width:420px;margin:0 auto 1.5rem;">À la recherche d'une alternance en Data — Rentrée 2026
+
+Rythme : 3 jours en entreprise / 2 jours à l'université (Licence Pro Data Mining)</p>
   <a href="mailto:inesbenhamida00@gmail.com" class="contact-link reveal">inesbenhamida00@gmail.com</a>
   <div class="contact-links reveal">
     <a href="https://github.com/inesbenhamida" class="cta cta-ghost">GitHub</a>
@@ -458,7 +455,7 @@ footer{padding:2rem 4rem;display:flex;justify-content:space-between;align-items:
 
 <footer>
   <span>© 2026 Inès Benhamida</span>
-  <span>Candidate IMAC · ESIEE Paris</span>
+
 </footer>
 
 <script>
@@ -496,7 +493,7 @@ const s1='color:#7c5cbf;font-size:14px;font-weight:bold;font-family:monospace;';
 const s2='color:#8a8680;font-size:11px;font-family:monospace;line-height:1.8;';
 const s3='color:#7c5cbf;font-size:11px;font-family:monospace;text-decoration:underline;';
 console.log('%c✦ Inès Benhamida — Portfolio 2026',s1);
-console.log('%cSi vous lisez ceci, vous savez que je vérifie les détails.\nCandidate IMAC · Gustave Eiffel · inesbenhamida00@gmail.com\nStack : HTML / CSS / JS vanilla.',s2);
+console.log('%cSi vous lisez ceci, vous savez que je vérifie les détails.\nÉtudiante en Data · Gustave Eiffel · inesbenhamida00@gmail.com\nStack : HTML / CSS / JS vanilla — zéro framework, 100 % fait main.',s2);
 console.log('%c→ github.com/inesbenhamida',s3);
 </script>
 </body>
